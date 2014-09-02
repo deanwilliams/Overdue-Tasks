@@ -6,6 +6,13 @@
 
 #import <Availability.h>
 
+#define TASK_PERSISTENCE_KEY @"Task Persistence Key"
+
+#define TASK_TITLE @"title"
+#define TASK_DESCRIPTION @"description"
+#define TASK_DATE @"date"
+#define TASK_COMPLETION @"completion"
+
 #ifndef __IPHONE_5_0
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif

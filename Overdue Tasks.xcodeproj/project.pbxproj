@@ -21,6 +21,10 @@
 		05AE9B6719B20DC600F3289D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AE9B4919B20DC600F3289D /* UIKit.framework */; };
 		05AE9B6F19B20DC600F3289D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05AE9B6D19B20DC600F3289D /* InfoPlist.strings */; };
 		05AE9B7119B20DC600F3289D /* Overdue_TasksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AE9B7019B20DC600F3289D /* Overdue_TasksTests.m */; };
+		05AE9B7C19B20E1800F3289D /* OTAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AE9B7B19B20E1800F3289D /* OTAddTaskViewController.m */; };
+		05AE9B7F19B20E2E00F3289D /* OTDetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AE9B7E19B20E2E00F3289D /* OTDetailTaskViewController.m */; };
+		05AE9B8219B20E4800F3289D /* OTEditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AE9B8119B20E4800F3289D /* OTEditTaskViewController.m */; };
+		05AE9B8619B2172A00F3289D /* OTTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AE9B8519B2172A00F3289D /* OTTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		05AE9B6C19B20DC600F3289D /* Overdue TasksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Overdue TasksTests-Info.plist"; sourceTree = "<group>"; };
 		05AE9B6E19B20DC600F3289D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		05AE9B7019B20DC600F3289D /* Overdue_TasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Overdue_TasksTests.m; sourceTree = "<group>"; };
+		05AE9B7A19B20E1800F3289D /* OTAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTAddTaskViewController.h; sourceTree = "<group>"; };
+		05AE9B7B19B20E1800F3289D /* OTAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTAddTaskViewController.m; sourceTree = "<group>"; };
+		05AE9B7D19B20E2E00F3289D /* OTDetailTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTDetailTaskViewController.h; sourceTree = "<group>"; };
+		05AE9B7E19B20E2E00F3289D /* OTDetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTDetailTaskViewController.m; sourceTree = "<group>"; };
+		05AE9B8019B20E4800F3289D /* OTEditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTEditTaskViewController.h; sourceTree = "<group>"; };
+		05AE9B8119B20E4800F3289D /* OTEditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTEditTaskViewController.m; sourceTree = "<group>"; };
+		05AE9B8419B2172A00F3289D /* OTTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTTask.h; sourceTree = "<group>"; };
+		05AE9B8519B2172A00F3289D /* OTTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 		05AE9B4B19B20DC600F3289D /* Overdue Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				05AE9B8319B2170900F3289D /* Models */,
 				05AE9B5419B20DC600F3289D /* OTAppDelegate.h */,
 				05AE9B5519B20DC600F3289D /* OTAppDelegate.m */,
 				05AE9B5719B20DC600F3289D /* Main.storyboard */,
@@ -119,6 +132,12 @@
 				05AE9B5B19B20DC600F3289D /* OTViewController.m */,
 				05AE9B5D19B20DC600F3289D /* Images.xcassets */,
 				05AE9B4C19B20DC600F3289D /* Supporting Files */,
+				05AE9B7A19B20E1800F3289D /* OTAddTaskViewController.h */,
+				05AE9B7B19B20E1800F3289D /* OTAddTaskViewController.m */,
+				05AE9B7D19B20E2E00F3289D /* OTDetailTaskViewController.h */,
+				05AE9B7E19B20E2E00F3289D /* OTDetailTaskViewController.m */,
+				05AE9B8019B20E4800F3289D /* OTEditTaskViewController.h */,
+				05AE9B8119B20E4800F3289D /* OTEditTaskViewController.m */,
 			);
 			path = "Overdue Tasks";
 			sourceTree = "<group>";
@@ -150,6 +169,15 @@
 				05AE9B6D19B20DC600F3289D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05AE9B8319B2170900F3289D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05AE9B8419B2172A00F3289D /* OTTask.h */,
+				05AE9B8519B2172A00F3289D /* OTTask.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +280,10 @@
 			files = (
 				05AE9B5219B20DC600F3289D /* main.m in Sources */,
 				05AE9B5619B20DC600F3289D /* OTAppDelegate.m in Sources */,
+				05AE9B7F19B20E2E00F3289D /* OTDetailTaskViewController.m in Sources */,
+				05AE9B7C19B20E1800F3289D /* OTAddTaskViewController.m in Sources */,
+				05AE9B8619B2172A00F3289D /* OTTask.m in Sources */,
+				05AE9B8219B20E4800F3289D /* OTEditTaskViewController.m in Sources */,
 				05AE9B5C19B20DC600F3289D /* OTViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
